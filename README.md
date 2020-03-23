@@ -49,4 +49,5 @@ First of all, let's get some setup:
 
 ### Learn by yourself
 
-**React Documentation**: https://fr.reactjs.org/docs/components-and-props.html
+* **React Documentation**: https://fr.reactjs.org/docs/components-and-props.html
+* **Git**: https://medium.com/@onejohi/git-understanding-the-basics-ba004a20dacc
