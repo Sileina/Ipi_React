@@ -15,9 +15,9 @@ This is an Introduction to react, we will learn some basic concept, providing a 
 First of all, let's get some setup:
 
   * **VSCode**: https://code.visualstudio.com/ (optional) - Number 1 code editor on the market
-  * **Git Bash** https://gitforwindows.org/ (mandatory) - A Git manager bundled with a Unix Shell, allows you to run shell command including git
-  * **Node JS** https://nodejs.org/en/download/ (mandatory) - Javascript Runtime environement
-  * **Yarn** https://classic.yarnpkg.com/fr/docs/install/#windows-stable (mandatory) - Package manager
+  * **Git Bash**: https://gitforwindows.org/ (mandatory) - A Git manager bundled with a Unix Shell, allows you to run shell command including git
+  * **Node JS**: https://nodejs.org/en/download/ (mandatory) - Javascript Runtime environement
+  * **Yarn**: https://classic.yarnpkg.com/fr/docs/install/#windows-stable (mandatory) - Package manager
   
 ## Workshops
 
