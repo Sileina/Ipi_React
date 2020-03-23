@@ -28,6 +28,8 @@ First of all, let's get some setup:
   * **Install dependecies**: yarn
 
  * **Run in developpement**: yarn start
+ 
+ * **Open vsCode in CurrentDirectory**: code .
 
   
 ## Workshops
