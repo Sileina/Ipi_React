@@ -24,7 +24,9 @@ First of all, let's get some setup:
   * **Get into the code folder**: cd Aries_React
   
  * **Get into the code folder**: cd my-app
-   
+  
+  * **Install dependecies**: yarn
+
  * **Run in developpement**: yarn start
 
   
