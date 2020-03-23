@@ -39,3 +39,7 @@ First of all, let's get some setup:
 5. Create a Functionnal component called **List** containing many **Item**
 6. Pass down the **Item** content as Props from the **List** component (item should display "Hello World 1", "Hello World 2", ...) 
 
+
+### Learn by yourself
+
+**React Documentation**: https://fr.reactjs.org/docs/components-and-props.html
