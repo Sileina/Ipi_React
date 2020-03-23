@@ -53,6 +53,26 @@ First of all, let's get some setup:
 6. Pass down the **Item** content as Props from the **List** component (item should display "Hello World 1", "Hello World 2", ...) 
 
 
+### 2 State of the art 
+
+**Goals** :
+
+* Meet the hooks notion
+* Learn how to use State
+
+**Ressource** :
+
+* useState Hooks documentation https://fr.reactjs.org/docs/hooks-state.html
+* Array documentation https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array
+
+**Instruction**:
+
+1 Make a "List" component pilling the previously made "Item" components in column
+2 Make a button component with a onClick prop
+3 Add two Button too your layout on with the string "Add" and one With the string "Delete"
+4 When the "Add" button is clicked an item is added to the list, When the "Delete" button is clicked an item is deleted from the list
+
+
 ### Learn by yourself
 
 * **React Documentation**: https://fr.reactjs.org/docs/components-and-props.html
