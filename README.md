@@ -67,9 +67,9 @@ First of all, let's get some setup:
 
 **Instruction**:
 
-1 Make a "List" component pilling the previously made "Item" components in column
-2 Make a button component with a onClick prop
-3 Add two Button too your layout on with the string "Add" and one With the string "Delete"
+1. Make a "List" component pilling the previously made "Item" components in column
+2. Make a button component with a onClick prop
+3. Add two Button too your layout on with the string "Add" and one With the string "Delete"
 4 When the "Add" button is clicked an item is added to the list, When the "Delete" button is clicked an item is deleted from the list
 
 
