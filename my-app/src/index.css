@@ -1,3 +1,36 @@
 body {
   margin: 0;
 }
+
+.header {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.item {
+  border: 1px solid grey;
+  box-shadow: 5px 4px black;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
