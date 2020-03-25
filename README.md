@@ -88,7 +88,7 @@ First of all, let's get some setup:
 
 1. Built your layout with material-ui components
 2. Store and retrieve your data from localStorage
-3 Implement a call to action to store your list/items
+3. Implement a call to action to store your list/items
 3. Handle list creation , list deletion (list will have a title)
 4. Handle item naming/renaming
 5. Handle item Check/Uncheck
