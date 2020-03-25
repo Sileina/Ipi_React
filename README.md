@@ -82,6 +82,7 @@ First of all, let's get some setup:
 **Ressource** :
 
 * Material-ui documentation https://material-ui.com/getting-started/installation/
+* LocalStorage documentation https://developer.mozilla.org/fr/docs/Web/API/Storage/LocalStorage
 
 **Instruction**:
 
