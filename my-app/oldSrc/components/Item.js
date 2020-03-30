@@ -1,15 +1,12 @@
 import React from 'react';
-import { ListItem } from '@material-ui/core';
 
 
 const Item = ({ children }) => {
 
     return (
-        <ListItem
-            button
-        >
+        <div className="item">
             {children}
-        </ListItem>
+        </div>
     )
 }
 
