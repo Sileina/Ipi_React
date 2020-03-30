@@ -113,6 +113,11 @@ First of all, let's get some setup:
 5. Push your commit to the remote repository *git push*
 6. Check on github !
 
+**On Git**:
+
+* To switch branches git checkout *branch name*
+* To push work *git push*
+* To pull from master *git pull origin master*
 
 
 
