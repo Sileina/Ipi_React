@@ -93,7 +93,7 @@ First of all, let's get some setup:
 5. Handle item naming/renaming
 6. Handle item Check/Uncheck
 
-### 3 Did i git it
+### 4 Did i git it ?
 
 **Goals** :
 
