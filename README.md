@@ -72,6 +72,54 @@ First of all, let's get some setup:
 3. Add two Button too your layout on with the string "Add" and one With the string "Delete"
 4. When the "Add" button is clicked an item is added to the list, When the "Delete" button is clicked an item is deleted from the list
 
+### 3 Hello open world !
+
+**Goals** :
+
+* Discover the library system
+* Discover an ui library
+
+**Ressource** :
+
+* Material-ui documentation https://material-ui.com/getting-started/installation/
+* LocalStorage documentation https://developer.mozilla.org/fr/docs/Web/API/Storage/LocalStorage
+
+**Instruction**:
+
+1. Built your layout with material-ui components
+2. Store and retrieve your data from localStorage
+3. Handle list creation , list deletion (list will have a title)
+4. Implement a call to action to store your list/items
+5. Handle item naming/renaming
+6. Handle item Check/Uncheck
+
+### 4 Did i git it ?
+
+**Goals** :
+
+* Asses your knowledge on react fundamental
+* Familiarize with git
+
+**Ressource** :
+
+* Git documentation https://help.github.com/en/github/using-git/learning-about-git
+
+**Instruction**:
+
+1. Create a github account
+2. Create your branch with *git checkout -b "branch name"*
+3. Add all repositorty files to your commit index *git add --all*
+4. Commit your files *git commit -m "my commit msg"*
+5. Push your commit to the remote repository *git push*
+6. Check on github !
+
+**On Git**:
+
+* To switch branches git checkout *branch name*
+* To push work *git push*
+* To pull from master *git pull origin master*
+
+
 
 ### Learn by yourself
 
