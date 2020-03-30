@@ -1,75 +1,49 @@
 import React, { useState } from 'react';
-import Item from './Item';
-// import ButtonTemplate from './ButtonTemplate';
-import Button from '@material-ui/core/Button'
-
 import ListMui from '@material-ui/core/List';
+import Item from '../components/Item';
+import Button from '@material-ui/core/Button';
 
-
-import TextField from '@material-ui/core/TextField'
-
-const defaultItems = ['BMW', 'Audi', 'Subaru', 'Ford']
-// const templateItem = "Mercedes"
-
+// value par default
 const STORAGE_KEY = "storageKey"
+const defaultItems = [1,2,3]
 
-// [
-//     { 
-//         name: string,
-//         items: [
-//             {
-//                 value: string
-//                 checked: bool
-//             }, --> représente un item
-//             ...
-//         ]
-//     },--> représente une liste
-// ...
-// ]
-
-const List = () => {
+const List = () =>{
     const [items, setItems] = useState(defaultItems)
     const [currentItemValue, setCurrentItemValue] = useState("")
-    let myVar = localStorage.getItem(STORAGE_KEY)
+    let localvalue = localStorage.getItem(STORAGE_KEY)
 
+    // Genération du btn ajouté
     const addItem = () => {
         const newItems = Array(...items)
         newItems.push(currentItemValue)
         setItems(newItems)
 
         localStorage.setItem(STORAGE_KEY, currentItemValue)
-        myVar = currentItemValue
+        localvalue = currentItemValue
         setCurrentItemValue("")
     }
-
+    
+    // Genération du btn supprimé
     const delItem = () => setItems(items.slice(0, items.length - 1))
 
-    const onInputChange = ({ target: { value } }) => {
-        setCurrentItemValue(value)
-    }
-
-    return (
-
+    
+    return(
         <div className={"list"}>
-            {/* <ListMui> */}
-            {/* {"input:value = " + myVar} */}
+            {/* Liste de tout les items */}
             <ListMui>
                 {
-                    items.map((item) => <Item>{item}</Item>)
+                    items.map((itemobjet) => <Item itemkey={itemobjet} itemprops={"test"}></Item>)
                 }
+                {/* <Item nbr={"14"} itemprops={"test2"}></Item> */}
             </ListMui>
-            <TextField
-                label="Name"
-                value={currentItemValue}
-                onChange={onInputChange}
-            />
+            {/* affichage btn pour ajouté */}
             <Button color="primary" variant='contained' onClick={addItem}>
-                {"New cars"}
+                {"add Item"}
             </Button>
+            {/* affichage btn pour supprimé */}
             <Button color="primary" variant='contained' onClick={delItem}>
-                {"Delete cars"}
+                {"Delete Item"}
             </Button>
-            {/* </ListMui> */}
         </div>
     )
 }
