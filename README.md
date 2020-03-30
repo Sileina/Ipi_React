@@ -107,9 +107,9 @@ First of all, let's get some setup:
 **Instruction**:
 
 1. Create a github account
-2. Create your branch with *git checkout -b <branch name>*
+2. Create your branch with *git checkout -b "branch name"*
 3. Add all repositorty files to your commit index *git add --all*
-4. Commit your files *git commit -m <my commit msg>*
+4. Commit your files *git commit -m "my commit msg"*
 5. Push your commit to the remote repository *git push*
 6. Check on github !
 
