@@ -1,16 +1,10 @@
 import React from 'react';
 
-const Header = ({ connect }) => {
+const Header = () => {
 
     return (
         <header>
-            <h1>{connect ? "Vous etes connecté" : "Vous n'etes pas connecté"}</h1>
-            <nav>
-                <ul>
-                    <li><a href='#'>Accueil</a></li>
-                    <li><a href='#'>{connect ? "Déconnexion" : "Connexion"}</a></li>
-                </ul>
-            </nav>
+            <h1>Bienvenue sur ListApp</h1>
         </header>
     )
 }

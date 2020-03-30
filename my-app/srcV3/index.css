@@ -45,11 +45,10 @@ main {
   display:flex;
   /* flex-direction: column; */
   justify-content: space-around;
-  align-items:flex-start;
+  align-items: center;
   /* height:300px; */
   width:100%;
   flex-wrap: wrap;
-  margin:35px 0 0 0;
 }
 
 main section{
@@ -58,10 +57,6 @@ main section{
   margin:35px;
   border:3px outset grey;
   padding:15px;
-}
-.list{
-  display:block;
-  width:100%;
 }
 
 .center{
@@ -74,17 +69,16 @@ main section{
   width:300px;
 }
 
-.myButtons{
+.addList{
   display:flex; 
   justify-content:center;
   margin-bottom:35px;
   width:100%;
 }
 
-.myButtons :first-child{
+.addList :first-child{
   margin:0 35px 0 0;
 }
-
 
 footer{
   padding:35px;

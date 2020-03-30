@@ -1,84 +1,61 @@
-import React from 'react';
-import MuiListItem from '@material-ui/core/ListItem';
-// import TextField from '@material-ui/core/TextField';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
+import React, { useState } from 'react';
+import { ListItem } from '@material-ui/core';
 import Checkbox from '@material-ui/core/Checkbox';
-import Button from '@material-ui/core/Button';
+import { Button } from '@material-ui/core';
+import TextField from '@material-ui/core/TextField';
 
 
+const Item = ({ item, ondelItem }) => {
 
-const Item = ({ item, fonctionDelItem, itemName }) => {
+    // useState de la checkBox
+    const [checked, setChecked] = useState(item.checked);
 
-    // gestion du state de l'item
-    // const [singleItem, setItem] = useState(item.value);
-
-    // // gestion etat de l'input
-    // const [inpValue, setValue] = useState("");
-
-
-    // const handleChangeNameItem = ({ target: { inpValue } }) => setValue(inpValue);
-
-    // const addNameItem = () => {
-    //     let newName = Array(...singleItem);
-    //     templateItem['value'] = inpValue;
-    //     newName.pop();
-    //     newName.push(templateItem);
-    //     setItem(newName);
-
-    //     setValue("");
-    // }
-
-    const changeChecked = () => {
-        console.log('button checked');
-        if (item['checked'] === false) {
-            item['checked'] = true;
-        } else {
-            item['checked'] = false;
-        }
-        // console.log(item['checked']);
+    // gestion checked
+    const handleChange = () => {
+        item.checked = !item.checked;
+        setChecked(!checked);
     }
 
-    const delItemC = () => {
-        // console.log(item.value);
-        const concernItem = item.value;
+    // useState pour changer le nom de l'item
+    const [changedName, setChangedName] = useState("");
 
-        fonctionDelItem(concernItem);
-
+    // gestion checked
+    const handleNameItem = (e) => {
+        setChangedName(e.target.value)
     }
 
-    // console.log(itemName);
+    const changeNameItem = () => {
+        item.name = changedName;
+        setChangedName("");
+    }
+
+    const onItemDelItem = () => {
+        ondelItem(item);
+    }
+
 
     return (
-        <MuiListItem divider>
-            <ListItemIcon>
+        <div className="itemSolo">
+            <ListItem divider>
                 <Checkbox
-                    edge="start"
-                    checked={item.checked}
-                    tabIndex={-1}
-                    disableRipple
-                    onClick={changeChecked}
+                    checked={checked}
+                    onChange={handleChange}
                 />
-            </ListItemIcon>
+                {item.name}
+                <TextField id="outlined-basic" label="Item Name" variant="outlined" onChange={handleNameItem} value={changedName} />
 
-            {item.value}
-
-            {/* <TextField
-                label="ItemName"
-                value={inpValue}
-                onChange={handleChangeNameItem}
-                variant="outlined"
-            /> */}
-
-            <Button onClick={delItemC} id={item.value} className="myButton">
-                {"Delete item"}
+                <Button onClick={changeNameItem}>
+                    New Name
             </Button>
+                <Button onClick={onItemDelItem}>
+                    Del Item
+            </Button>
+            </ListItem>
+        </div>
 
-            {/* <Button onClick={addNameItem}>
-                {"Change itemName"}
-            </Button> */}
-
-        </MuiListItem>
     )
 }
 
-export default Item;
+
+
+export default Item
