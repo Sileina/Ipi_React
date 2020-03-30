@@ -1,3 +1,40 @@
 body {
   margin: 0;
+  background-color: rgb(205, 226, 238);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  text-align: center;
+  background-color: rgb(27, 129, 189);
+  color: white;
+  padding: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 27px auto;
+  background-color: rgb(127, 138, 196);
+  color: white;
+  padding: 5px;
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(11, 48, 70);
+  color: white;
+  padding: 2px;
+}
+
+span.MuiButton-label {
+  color: white;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary {
+  margin: 5px 0;
 }
