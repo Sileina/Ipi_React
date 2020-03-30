@@ -93,6 +93,29 @@ First of all, let's get some setup:
 5. Handle item naming/renaming
 6. Handle item Check/Uncheck
 
+### 3 Did i git it
+
+**Goals** :
+
+* Asses your knowledge on react fundamental
+* Familiarize with git
+
+**Ressource** :
+
+* Git documentation https://help.github.com/en/github/using-git/learning-about-git
+
+**Instruction**:
+
+1. Create a github account
+2. Create your branch with *git checkout -b <branch name>*
+3. Add all repositorty files to your commit index *git add --all*
+4. Commit your files *git commit -m <my commit msg>*
+5. Push your commit to the remote repository *git push*
+6. Check on github !
+
+
+
+
 ### Learn by yourself
 
 * **React Documentation**: https://fr.reactjs.org/docs/components-and-props.html
