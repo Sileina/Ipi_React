@@ -1,16 +1,25 @@
 import React from 'react';
-import { ListItem } from '@material-ui/core';
+import { ListItem, Checkbox } from '@material-ui/core';
 
+/*
+{
+        name: 'defaultItem',
+        check: true,
+}
+*/
 
-const Item = ({ children }) => {
+const Item = ({ item, onToggleCheck }) => {
+
+    const onItemClick = () => {
+        onToggleCheck(item)
+    }
 
     return (
-        <ListItem
-            button
-        >
-            {children}
+        <ListItem button onClick={onItemClick}>
+            {item.name}
+            <Checkbox checked={item.check} />
         </ListItem>
     )
 }
 
-export default Item
+export default Item;

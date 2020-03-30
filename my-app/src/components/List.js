@@ -1,80 +1,50 @@
 import React, { useState } from 'react';
+import { List as ListMui, Button, Input } from '@material-ui/core'
 import Item from './Item';
-//import Button from './Button';
-import Button from '@material-ui/core/Button'
-import ListUi from '@material-ui/core/List'
-
-import TextField from '@material-ui/core/TextField';
-
-const defaultItems = ['tomates', 'citron', 'biere', 'linge']
-
-const STORAGE_KEY = "storageKey"
 
 /*
-[
- { 
-     name: string,
-     items: [
-         {
-             value: string
-             checked: bool
-         }, --> représente un item
-         ...
-     ]
- },--> représente une liste
- ...
-]
-
-
+{
+    name: 'defaultList',
+    items: [{
+        name: 'defaultItem',
+        check: true,
+}
 */
 
+const List = ({ list, addItem, deleteItem, onToggleCheck }) => {
 
+    const [itemName, setItemName] = useState("")
 
-const List = () => {
-    const [items, setItems] = useState(defaultItems) // items = defaultItems
-    const [currentItemValue, setCurrentItemValue] = useState("")
-    let myVar = localStorage.getItem(STORAGE_KEY)
-
-
-    const addItem = () => {
-        const newItems = Array(...items)
-        newItems.push(currentItemValue)
-        setItems(newItems) //=> items = [tout ce quil y a dans items , nouvelle Item]
-
-        //on stock la valeur de currentItemValue dans le local storage, sous la clef storageKey
-        localStorage.setItem(STORAGE_KEY, currentItemValue)
-        myVar = currentItemValue
-        setCurrentItemValue("")
+    const onAdd = () => {
+        addItem({ name: itemName, check: true }, list)
+        setItemName("")
     }
 
-    const delItem = () => setItems(items.slice(0, items.length - 1))
-
-    const onInputChange = ({ target: { value } }) => {
-        setCurrentItemValue(value)
+    const onDelete = () => {
+        deleteItem(list)
     }
+
+    //On gére les modifications 
+    const onInputChange = (e) => setItemName(e.target.value)
 
     return (
-        <div className="list">
-            {/* <Input value={currentItemValue} onChange={onInputChange} /> */}
-            <TextField
-                label="Name"
-                value={currentItemValue}
-                onChange={onInputChange}
-            />
-            {"input value : " + myVar}
-            <Button color="primary" variant='contained' onClick={addItem}>
-                {"add"}
+        <ListMui >
+            {list.name}
+            {
+                /*
+                Afficher mon tableau d'item avec un composant <Item>
+                */
+            }
+            {list.items.map((item) => <Item item={item} onToggleCheck={onToggleCheck} />)}
+            <Input style={{ display: 'block' }} value={itemName} onChange={onInputChange} />
+            <Button disabled={itemName === ""} onClick={onAdd} variant={"contained"} color={"secondary"}>
+                {"Add Item"}
             </Button>
-            <Button color="primary" variant='contained' onClick={delItem}>
-                {"delete"}
+            <Button disabled={list.items.length === 0} onClick={onDelete} variant={"contained"} color={"secondary"}>
+                {"Delete Item"}
             </Button>
-            <ListUi>
-                {
-                    items.map((item) => <Item>{item}</Item>)
-                }
-            </ListUi>
-        </div>
+        </ListMui>
     )
 }
 
-export default List
+export default List;
