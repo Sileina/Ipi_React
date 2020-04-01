@@ -138,6 +138,7 @@ First of all, let's get some setup:
 2. Add a date to the Header
 3. Add a button to switch the date
 4. Display only  the targeted date lists
+5. Use a scroll area view
 
 
 ### Learn by yourself
