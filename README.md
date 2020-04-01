@@ -120,6 +120,25 @@ First of all, let's get some setup:
 * To pull from master *git pull origin master*
 
 
+### 6 It's all about context ?
+
+**Goals** :
+
+* Dicover the useContext Hooks
+* Familiarize date managment
+
+**Ressource** :
+
+* Date-fns documentation https://date-fns.org/v1.30.1/docs/format
+* Hooks documentation https://fr.reactjs.org/docs/hooks-reference.html#usecontext
+
+**Instruction**:
+
+1. Add a date field to the list model
+2. Add a date to the Header
+3. Add a button to switch the date
+4. Display only  the targeted date lists
+
 
 ### Learn by yourself
 
