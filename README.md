@@ -129,7 +129,7 @@ First of all, let's get some setup:
 
 **Ressource** :
 
-* Date-fns documentation https://date-fns.org/v1.30.1/docs/format
+* Moment documentation https://momentjs.com/
 * Hooks documentation https://fr.reactjs.org/docs/hooks-reference.html#usecontext
 
 **Instruction**:
