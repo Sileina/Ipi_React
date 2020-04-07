@@ -152,7 +152,7 @@ First of all, let's get some setup:
 
 * Firebase Quick start https://firebase.google.com/docs/firestore/quickstart
 * Firebase Console https://console.firebase.google.com/
-* Cloud Firestore documentation https://rnfirebase.io/firestore/usage
+* Cloud Firestore documentation https://rnfirebase.io/ and https://rnfirebase.io/firestore/usage
 
 **Instruction**:
 
