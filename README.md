@@ -141,6 +141,27 @@ First of all, let's get some setup:
 5. Use a scroll area view
 
 
+### 7 Let's get on Fire(Base)
+
+**Goals** :
+
+* Familiarize with the firebase console
+* Lear some noSQL notions
+
+**Ressource** :
+
+* Firebase Quick start https://firebase.google.com/docs/firestore/quickstart
+* Firebase Consolehttps://console.firebase.google.com/
+
+**Instruction**:
+
+1. Start a Project into firebase
+2. Create a collection Items
+3. Create a collection List
+4. Create list from client into firestore
+5. Create item in list from client into firestore
+6. Get List from firestore
+
 ### Learn by yourself
 
 * **React Documentation**: https://fr.reactjs.org/docs/components-and-props.html
