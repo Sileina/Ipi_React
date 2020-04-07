@@ -154,6 +154,7 @@ First of all, let's get some setup:
 * Firebase Console https://console.firebase.google.com/
 * Cloud Firestore documentation https://rnfirebase.io/ and https://rnfirebase.io/firestore/usage
 * firestore get data documentation https://firebase.google.com/docs/firestore/query-data/get-data
+* Firestore add Date documentation https://firebase.google.com/docs/firestore/manage-data/add-data
 
 **Instruction**:
 
