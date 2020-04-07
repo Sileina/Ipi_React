@@ -151,7 +151,8 @@ First of all, let's get some setup:
 **Ressource** :
 
 * Firebase Quick start https://firebase.google.com/docs/firestore/quickstart
-* Firebase Consolehttps://console.firebase.google.com/
+* Firebase Console https://console.firebase.google.com/
+* Cloud Firestore documentation https://rnfirebase.io/firestore/usage
 
 **Instruction**:
 
