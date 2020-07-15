@@ -52,7 +52,7 @@ First of all, let's get some setup:
 *Exo 1*
 
 1. Create a component named List with the props children, display children in the HTML
-'''javascript
+```javascript
 const List = ({ children }) => {
     return (
         <div >
