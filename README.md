@@ -25,9 +25,9 @@ First of all, let's get some setup:
   
  * **Get into the code folder**: cd my-app
   
-  * **Install dependecies**: yarn
+  * **Install dependecies**: yarn / npm install
 
- * **Run in developpement**: yarn start
+ * **Run in developpement**: yarn start / npm start
  
  * **Open vsCode in CurrentDirectory**: code .
 
