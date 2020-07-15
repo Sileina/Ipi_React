@@ -19,7 +19,7 @@ First of all, let's get some setup:
   * **Node JS**: https://nodejs.org/en/download/ (mandatory) - Javascript Runtime environement
   * **Yarn**: https://classic.yarnpkg.com/fr/docs/install/#windows-stable (mandatory) - Package manager
   
-  **Clone The repository** : git clone https://github.com/RemiSeris/Aries_React.git
+  **Clone The repository** : git clone https://github.com/RemiSeris/Ipi_React.git
   
   * **Get into the code folder**: cd Ipi_React
   
