@@ -48,6 +48,17 @@ First of all, let's get some setup:
 1. Do all the the prerequisite
 2. Clone the project
 3. Run the project
+
+*Exo 1*
+
+1. Create a component named List with the props children, display children in the HTML
+2. Create A component named Item wich display "HELLO WORLD"
+3. Display List and Item in App
+4. Display a title to List "Ma list"
+5. Display many Items in a List
+6 Display Many List with many Items in App
+
+
 4. Create a Functionnal component called **Item** with border, shadow, and a "Hello World" in the center .
 5. Create a Functionnal component called **List** containing many **Item**
 6. Pass down the **Item** content as Props from the **List** component (item should display "Hello World 1", "Hello World 2", ...) 
