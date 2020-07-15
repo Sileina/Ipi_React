@@ -52,6 +52,17 @@ First of all, let's get some setup:
 *Exo 1*
 
 1. Create a component named List with the props children, display children in the HTML
+'''javascript
+const List = ({ children }) => {
+    return (
+        <div >
+            {children}
+        </div>
+    )
+}
+
+
+
 2. Create A component named Item wich display "HELLO WORLD"
 3. Display List and Item in App
 4. Display a title to List "Ma list"
