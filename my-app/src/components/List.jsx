@@ -1,11 +1,11 @@
 import React from 'react';
 
-const List = ({children}) => {
+const List = ({children, title}) => {
 
 
     return (
         <div className='liste'>
-          Titre de la liste
+          {title}
           {children}
         </div>
         )

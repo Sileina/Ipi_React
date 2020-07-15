@@ -8,7 +8,7 @@ const App = () => {
     return (
         <div className='container'>
             <Item title='Je suis le 1er Item'></Item>
-            <List>
+            <List title='Titre de la liste'>
                 <Item title='1er Item de la liste'></Item>
                 <Item title='2nd Item de la liste'></Item>
                 <Item title='3eme Item de la liste'></Item>
