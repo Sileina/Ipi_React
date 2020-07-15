@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This is an Introduction to react, we will learn some basic concept, providing a strong basics.
+This is an Introduction to react, we will learn some core concept, providing strong basics.
 
 * **JSX Syntax**
 * **Functional Component**
