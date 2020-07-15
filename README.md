@@ -56,8 +56,9 @@ First of all, let's get some setup:
 3. Display List and Item in App
 4. Display a title to List "Ma list"
 5. Display many Items in a List
-6 Display Many List with many Items in App
+6. Display Many List with many Items in App
 
+* End Exo 1*
 
 4. Create a Functionnal component called **Item** with border, shadow, and a "Hello World" in the center .
 5. Create a Functionnal component called **List** containing many **Item**
