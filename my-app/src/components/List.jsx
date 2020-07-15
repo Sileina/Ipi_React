@@ -1,12 +1,13 @@
 import React from 'react';
 
-const List = ({title, onClick}) => {
+const List = ({children}) => {
 
 
     return (
-        <button onClick='onClick()'>
-          {title}
-        </button>
+        <div className='liste'>
+          Titre de la liste
+          {children}
+        </div>
         )
 }
 

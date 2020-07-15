@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Item = ({title, onClick}) => {
+const Item = (props) => {
 
 
     return (
        <div className='item'>
-         Hello World
+         {props.title}
        </div>
         )
 }
