@@ -21,7 +21,7 @@ First of all, let's get some setup:
   
   **Clone The repository** : git clone https://github.com/RemiSeris/Aries_React.git
   
-  * **Get into the code folder**: cd Aries_React
+  * **Get into the code folder**: cd Ipi_React
   
  * **Get into the code folder**: cd my-app
   
